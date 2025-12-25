@@ -1,0 +1,146 @@
+
+## What is OOPS?
+
+OOPS is a programming approach where software is designed using **objects**.
+An object is a real-world entity that contains **data (attributes)** and **behavior (methods)**.
+
+Example:
+`Car` is an object
+
+* Data → color, speed, engine
+* Behavior → start(), stop(), accelerate()
+
+---
+
+## 4 Pillars of OOPS 🏛️
+
+### 1️⃣ Encapsulation
+
+**Meaning:** Wrapping data and methods together and restricting direct access.
+
+✔ Protects data
+✔ Improves security
+
+**Example (Python):**
+
+```python
+class Account:
+    def __init__(self, balance):
+        self.__balance = balance   # private variable
+
+    def get_balance(self):
+        return self.__balance
+```
+
+---
+
+### 2️⃣ Inheritance
+
+**Meaning:** One class acquires properties of another class.
+
+✔ Code reusability
+✔ Parent–child relationship
+
+**Example:**
+
+```python
+class Vehicle:
+    def start(self):
+        print("Vehicle started")
+
+class Car(Vehicle):
+    pass
+
+car = Car()
+car.start()
+```
+
+---
+
+### 3️⃣ Polymorphism
+
+**Meaning:** Same function name, different behavior.
+
+✔ Flexibility
+✔ Method overriding
+
+**Example:**
+
+```python
+class Dog:
+    def sound(self):
+        print("Bark")
+
+class Cat:
+    def sound(self):
+        print("Meow")
+
+for animal in (Dog(), Cat()):
+    animal.sound()
+```
+
+---
+
+### 4️⃣ Abstraction
+
+**Meaning:** Hiding implementation details and showing only essential features.
+
+✔ Reduces complexity
+✔ Focus on what, not how
+
+**Example:**
+
+```python
+from abc import ABC, abstractmethod
+
+class Shape(ABC):
+    @abstractmethod
+    def area(self):
+        pass
+
+class Circle(Shape):
+    def area(self):
+        return 3.14 * 5 * 5
+```
+
+---
+
+## Class vs Object (Very Important)
+
+| Class     | Object        |
+| --------- | ------------- |
+| Blueprint | Real instance |
+| Logical   | Physical      |
+| No memory | Uses memory   |
+
+---
+
+## Advantages of OOPS
+
+* Modular code
+* Easy maintenance
+* Reusability
+* Scalable design
+* Better security
+
+---
+
+## Interview One-Line Definitions 🧠
+
+* **Encapsulation:** Data hiding using access control
+* **Inheritance:** Acquiring properties from parent class
+* **Polymorphism:** One interface, many forms
+* **Abstraction:** Hiding internal implementation
+
+---
+
+## Where OOPS is Used
+
+* Java, Python, C++
+* Spring Boot
+* Angular (component-based)
+* Real-world software systems
+
+---
+
+
